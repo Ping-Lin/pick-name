@@ -174,12 +174,16 @@ class GoodName:
 
     def is_good_name(self) -> bool:
         count = 0
+
+        # Last name may always be calculated to "凶". (Eg. 林)
+        # Count "凶" twice for condition of bad name.
         for num in self.get_five_personailty():
             if self.get_81_fortune(num) == "凶":
                 count += 1
             if count >= 2:
                 return False
 
+        # 平上, 次吉, 吉 are ok!
         if self.get_three_talent_fortune() == "平下" or \
            self.get_three_talent_fortune() == "平":
             return False
