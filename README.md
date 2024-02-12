@@ -1,5 +1,6 @@
 # pick-name
-Pick a good name!
+Pick a good chinese name!
+中文命名工具！
 
 We use Moe Dictionary for searching some words we want,
 and naming techniques are 三才五格 and 81 靈動數字.
